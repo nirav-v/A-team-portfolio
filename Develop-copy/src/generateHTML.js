@@ -1,6 +1,6 @@
 
 // write a template string html that fills in the user input for just one card
-    const generateHTML = ({name}) =>  
+    const generateHTML = ({name, id, email}) =>  
     `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,12 +34,12 @@
         <div class="card" style="width: 20rem">
           <div class="card-header bg-primary text-light p-3">
             <h2>${name}</h2>
-            <h3>Engineer</h3>
+            <h3>Title</h3>
           </div>
           <ul class="list-group list-group-flush bg-">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">ID: ${id}</li>
+            <li class="list-group-item">email: ${email} </li>
+            <li class="list-group-item">Office number: </li>
           </ul>
         </div>
       </div>
